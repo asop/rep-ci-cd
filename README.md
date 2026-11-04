@@ -1,5 +1,7 @@
 # 🚀 rep-ci-cd
 
+![CI/CD Testing](https://github.com/asop/rep-ci-cd/actions/workflows/main.yml/badge.svg)
+
 > Percobaan CI/CD — tanpa Docker, cuma pakai GitHub Actions.
 
 Repo ini bukti kalau buat jalanin CI/CD itu **gak harus ribet** dan **gak harus install Docker** dulu.
