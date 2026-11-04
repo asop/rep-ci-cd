@@ -1,0 +1,20 @@
+name: CI/CD Testing
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  cek-dan-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Cek apakah ada file index.html
+        run: |
+          ls -la
+          echo "File ketemu, lanjut!"
+
+      - name: Deploy pura-pura
+        run: echo "BERHASIL! Website udah di-deploy otomatis"
