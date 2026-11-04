@@ -16,9 +16,26 @@ Setiap ada kode baru yang di-push, langsung di-test otomatis. Kalau ada yang err
 **CD = Continuous Delivery**
 Kalau test-nya lolos, kode baru itu langsung siap di-deploy ke user, tanpa deploy manual.
 
-Gambaran:
-`Masak (Code) -> Cicipin (Test) -> Sajiin ke Pelanggan (Deploy)` — semua otomatis.
+---
+
+## ⚙️ Cara Kerjanya?
+
+File `main.yml` ini yang ngatur semuanya:
+
+1.  **Trigger:** Jalan otomatis tiap ada `push` ke branch `main`
+2.  **Checkout:** GitHub ngambil kode terbaru
+3.  **Test:** Ngecek apakah `index.html` ada dan gak error
+4.  **Deploy:** Kalau lolos, keluar pesan `BERHASIL!`
+
+Mau liat buktinya? Klik tab **Actions** di atas repo ini 👆
 
 ---
 
-## 📁 Struktur Repo
+## 🛠️ Cara Coba Sendiri
+
+1.  Clone repo ini
+    ```bash
+    git clone https://github.com/asop/rep-ci-cd.git
+
+
+---
